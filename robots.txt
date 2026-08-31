@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://nakuljangra.github.io/sitemap.xml

@@ -28,3 +28,18 @@ main{margin-left:var(--nav)}.section{position:relative;padding:100px 64px;border
 @media(max-width:1050px){:root{--nav:0px}.index{position:sticky;width:100%;height:auto;padding:12px 18px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;gap:10px;background:rgba(247,246,241,.9)}.index__list{flex-direction:row;gap:14px;overflow-x:auto}.index__link{white-space:nowrap;font-size:11px}.brand__name{display:none}.index__link.is-active:before{display:none}.section{padding:78px 28px}.hero__inner{gap:40px}.hero__portrait{width:min(330px,100%)}}
 @media(max-width:760px){.hero{padding-top:62px}.hero__inner{grid-template-columns:1fr;gap:45px}.hero__portrait{justify-self:center;width:min(310px,82vw);order:-1}.portrait__badge{right:-8px;bottom:18px}.name{font-size:4rem}.ledger-strip{grid-template-columns:1fr;gap:16px}.ledger-strip__item,.ledger-strip__item+.ledger-strip__item{border-left:0;padding:0}.capability-grid,.recommendation-grid,.notes-grid{grid-template-columns:1fr}.timeline>li{grid-template-columns:1fr;gap:7px}.exhibit__when{margin-left:0}.recommendations__heading{align-items:start}.rec-count{text-align:left}.contact__grid{grid-template-columns:1fr;gap:30px}.section{padding:64px 20px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+/* HERO PHOTO LAYER FIX */
+.hero_portrait {
+  position: relative !important;
+  z-index: 20 !important;
+}
+
+.hero_portrait img {
+  position: relative !important;
+  z-index: 21 !important;
+}
+
+.ledger-strip {
+  position: relative !important;
+  z-index: 1 !important;
+}
